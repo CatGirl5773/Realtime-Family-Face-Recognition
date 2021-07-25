@@ -1,6 +1,7 @@
 body {
     background-size: cover;
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .btn-info {
@@ -8,7 +9,6 @@ body {
     width: 100%;
     padding: 10px;
     margin: 0px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .heading_div {
@@ -18,9 +18,47 @@ body {
     padding: 10px;
     border-radius: 20px;
     margin-left: 25%;
+    box-shadow: 5px 5px 5px lightgrey;
 }
 
 .heading_div2 {
     margin: 5px;
     font-size: 18px;
+}
+
+.result_para {
+    font-size: 20px;
+    box-shadow: 5px 5px 5px lightgrey;
+}
+
+.copyright_footer {
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    color: black;
+    background-color: lightgrey;
+    padding: 10px;
+    font-size: 15px;
+}
+
+canvas {
+    border: 5px solid white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px lightgrey;
+    animation-name: border;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes border {
+    from {
+        border: 5px solid white;
+        box-shadow: 5px 5px 5px lightgrey;
+    }
+
+    to {
+        border: 5px solid palegoldenrod;
+        box-shadow: 5px 5px 5px darkgrey;
+    }
 }
